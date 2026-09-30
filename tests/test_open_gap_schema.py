@@ -11,4 +11,7 @@ def test_manifest_minimum_schema():
     assert isinstance(data["skills"], list) and all(isinstance(x, str) for x in data["skills"])
     assert isinstance(data["tools"], list) and all(isinstance(x, str) for x in data["tools"])
     assert all((root / "skills" / s / "SKILL.md").is_file() for s in data["skills"])
-    assert all((root / t).is_file() for t in data["tools"])
+    assert all(
+    (root / "tools" / f"{tool}.yaml").is_file()
+    for tool in data["tools"]
+)

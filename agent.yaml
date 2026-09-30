@@ -2,12 +2,14 @@ spec_version: "0.1.0"
 name: feature-engineering-agent
 version: 1.0.0
 description: A framework-independent agent for validating datasets and applying deterministic feature engineering transformations.
+
 skills:
   - feature-engineering
   - feature-validation
   - feature-selection
+
 tools:
-  - tools/analyze_numeric.py
-  - tools/encode_categorical.py
-  - tools/select_features.py
-  - tools/validate_dataset.py
+  - analyze-numeric
+  - encode-categorical
+  - select-features
+  - validate-dataset

@@ -1,0 +1,9 @@
+name: encode-categorical
+description: Encode categorical values using deterministic lexical category ordering.
+input_schema:
+  type: object
+  properties:
+    values:
+      type: array
+  required:
+    - values

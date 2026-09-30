@@ -1,0 +1,17 @@
+name: select-features
+description: Select top-k features using deterministic score ordering with lexical tie-breaking.
+input_schema:
+  type: object
+  properties:
+    features:
+      type: array
+      items:
+        type: string
+    scores:
+      type: object
+    k:
+      type: integer
+  required:
+    - features
+    - scores
+    - k

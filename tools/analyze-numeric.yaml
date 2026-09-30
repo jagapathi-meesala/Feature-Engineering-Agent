@@ -1,0 +1,11 @@
+name: analyze-numeric
+description: Compute deterministic descriptive statistics for a numeric feature.
+input_schema:
+  type: object
+  properties:
+    values:
+      type: array
+      items:
+        type: number
+  required:
+    - values

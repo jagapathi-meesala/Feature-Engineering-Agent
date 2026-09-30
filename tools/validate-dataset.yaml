@@ -1,0 +1,13 @@
+name: validate-dataset
+description: Validate tabular rows for shape, missingness, and observed types.
+input_schema:
+  type: object
+  properties:
+    rows:
+      type: array
+    columns:
+      type: array
+      items:
+        type: string
+  required:
+    - rows
